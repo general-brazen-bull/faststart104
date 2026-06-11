@@ -139,7 +139,7 @@ nav.nav-hidden {
   display: grid;
   grid-template-columns: 40% 60%;
   min-height: 410px;
-  height: 600px;
+  height: 300px;
   align-items: center;
 }
 
@@ -247,9 +247,9 @@ nav.nav-hidden {
 }
 
 .use-case-img {
-  width: 180%;
+  width: 150%;
   max-width: none;
-  height: 360px;
+  height: 350px;
   object-fit: contain;
   display: block;
   margin-bottom: 4px;
@@ -295,7 +295,7 @@ nav.nav-hidden {
 
 .specs-grid {
   display: grid;
-  grid-template-columns: 61% 39%;
+  grid-template-columns: 55% 45%;
   gap: 0;
   max-width: 1500px;
   margin: 0 auto;
@@ -307,7 +307,7 @@ nav.nav-hidden {
 }
 
 .specs-garage img {
-  width: 80%;
+  width: 100%;
   max-width: none;
   height: auto;
   display: block;
@@ -644,23 +644,21 @@ nav.nav-hidden {
 }
 
 .timeline-inner {
-  max-width: 1500px;
-  margin: 0 auto;
+  max-width: 1650px;
+  margin: 30px auto;
   padding: 80px 60px 0;
-  margin-top: 30px;
-  margin-bottom: 30px;
 }
 
 .timeline-row {
   display: grid;
-  grid-template-columns: 260px 900px 420px;
-  gap: 48px;
+  grid-template-columns: 230px minmax(680px, 1fr) 380px;
+  gap: 44px;
   align-items: center;
-  max-width: 1800px;
+  width: 100%;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 24px 0;
   border-bottom: 2px solid rgba(240, 234, 214, 0.14);
-  transform: translateX(120px);
+  transform: none;
 }
 
 .timeline-row:last-child {
@@ -693,11 +691,10 @@ nav.nav-hidden {
 }
 
 .timeline-label img {
-  width: 80%;
+  width: 100%;
   height: auto;
   display: block;
   border-radius: 2px;
-
   transition: transform 0.4s cubic-bezier(.22,1,.36,1);
 }
 
@@ -710,27 +707,7 @@ nav.nav-hidden {
   font-size: 28px;
   line-height: 1.32;
   color: #c4c4c4;
-  max-width: 420px;
-}
-
-.decade-1960s .timeline-year { color: #b0a090; }
-.decade-1960s .timeline-era  { color: #888; }
-.decade-1970s .timeline-year { color: var(--gold); }
-.decade-1970s .timeline-era  { color: var(--gold); }
-.decade-1980s .timeline-year { color: #6ba3d6; }
-.decade-1980s .timeline-era  { color: #6ba3d6; }
-.decade-1990s .timeline-year { color: #aaa; }
-.decade-1990s .timeline-era  { color: #aaa; }
-.decade-2000s .timeline-year { color: #7ab87a; }
-.decade-2000s .timeline-era  { color: #7ab87a; }
-.decade-2010s .timeline-year { color: #6ba3d6; }
-.decade-2010s .timeline-era  { color: #6ba3d6; }
-.decade-2020s .timeline-year { color: var(--red); }
-.decade-2020s .timeline-era  { color: var(--red); }
-
-
-.timeline-header {
-  background: #021b3d;
+  max-width: 380px;
 }
 
 .year-s {
@@ -738,7 +715,6 @@ nav.nav-hidden {
   position: relative;
   top: -0.03em;
 }
-
 .timeline-footer {
   width: 100%;
   background: #00224d;
@@ -754,8 +730,8 @@ nav.nav-hidden {
   display: inline-block;
 
   font-family: 'Bebas Neue', sans-serif;
-  font-size: clamp(38px, 3vw, 52px);
-  line-height: 1;
+  font-size: clamp(24px, 2vw, 34px);
+    line-height: 1;
   letter-spacing: 0.24em;
   text-transform: uppercase;
   color: #fff;
@@ -1535,7 +1511,7 @@ nav.nav-hidden {
       <a href="#origin-story">The Story</a>
       <a href="#product-specs">Product</a>
       <a href="#how-to-enjoy">How to Enjoy</a>
-      <li><a href="https://deepbluedistilleries.ca/where-to-buy" target="_blank" rel="noopener" class="external">Where to Buy</a></li>
+      <a href="https://deepbluedistilleries.ca/where-to-buy" target="_blank" rel="noopener" class="external">Where to Buy</a>
       <a href="https://deepbluedistilleries.ca/contact" target="_blank" rel="noopener">Contact</a>
     </div>
 
