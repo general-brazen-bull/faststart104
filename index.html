@@ -154,7 +154,7 @@ nav.nav-hidden {
   max-width: none;
   height: auto;
   display: block;
-  margin-top: -85px;
+  margin-top: -75px;
   margin-bottom:-35px;
   margin-left: 110px;
   position: relative;
@@ -358,7 +358,9 @@ nav.nav-hidden {
 }
 
 .specs-table td:last-child {
+  width: 45%;
   text-align: left;
+  white-space: nowrap;
 }
 
 .specs-tagline {
@@ -565,7 +567,7 @@ nav.nav-hidden {
 
 .origin-kicker {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 34px;
+  font-size: 30px;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--red);
@@ -587,7 +589,7 @@ nav.nav-hidden {
 
 .origin-copy p {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 28px;
+  font-size: 22px;
   line-height: 1.45;
   color: #0E1A2B;
   margin-bottom: 22px;
@@ -596,7 +598,7 @@ nav.nav-hidden {
 
 .origin-copy h3 {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 42px;
+  font-size: 40px;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: #0E1A2B;
@@ -606,7 +608,7 @@ nav.nav-hidden {
 
 .origin-highlight {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 42px !important;
+  font-size: 40px !important;
   line-height: 1;
   color: #C8152A !important;
   text-transform: uppercase;
@@ -615,7 +617,7 @@ nav.nav-hidden {
 
 .origin-ending {
   font-family: 'Bebas Neue', sans-serif;
-  font-size: 42px !important;
+  font-size: 40px !important;
   line-height: 1;
   color: #C8152A !important;
   text-transform: uppercase;
@@ -704,7 +706,7 @@ nav.nav-hidden {
 
 .timeline-desc {
   font-family: 'Barlow Condensed', sans-serif;
-  font-size: 28px;
+  font-size: 22px;
   line-height: 1.32;
   color: #c4c4c4;
   max-width: 380px;
@@ -715,6 +717,42 @@ nav.nav-hidden {
   position: relative;
   top: -0.03em;
 }
+
+.decade-1960s .timeline-year,
+.decade-1960s .timeline-era {
+  color: #b0a090;
+}
+
+.decade-1970s .timeline-year,
+.decade-1970s .timeline-era {
+  color: var(--gold);
+}
+
+.decade-1980s .timeline-year,
+.decade-1980s .timeline-era {
+  color: #6ba3d6;
+}
+
+.decade-1990s .timeline-year,
+.decade-1990s .timeline-era {
+  color: #aaa;
+}
+
+.decade-2000s .timeline-year,
+.decade-2000s .timeline-era {
+  color: #7ab87a;
+}
+
+.decade-2010s .timeline-year,
+.decade-2010s .timeline-era {
+  color: #6ba3d6;
+}
+
+.decade-2020s .timeline-year,
+.decade-2020s .timeline-era {
+  color: var(--red);
+}
+
 .timeline-footer {
   width: 100%;
   background: #00224d;
@@ -1068,8 +1106,8 @@ nav.nav-hidden {
   }
 
   .specs-table td:first-child {
-    width: 42%;
-  }
+  width: 55%;
+}
 
   .specs-tagline {
     margin-bottom: 26px;
