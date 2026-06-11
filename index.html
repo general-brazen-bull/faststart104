@@ -112,6 +112,10 @@ nav.nav-hidden {
       display: block;
     }
 
+    .hero-mobile {
+  display: none;
+}
+
    /* ── ABOUT ── */
 
    #about {
@@ -954,6 +958,7 @@ nav.nav-hidden {
   nav {
     height: 72px;
     padding: 0 18px;
+    background: #021b3d;
   }
 
   .nav-logo img {
@@ -968,8 +973,32 @@ nav.nav-hidden {
     display: block;
   }
 
+  .nav-mobile {
+    top: 72px;
+  }
+
+  .nav-mobile .nav-cta {
+    width: fit-content;
+    display: inline-flex;
+    padding: 10px 20px 10px 12px;
+  }
+
   #hero {
     margin-top: 72px;
+  }
+
+  .hero-desktop {
+    display: none !important;
+  }
+
+  .hero-mobile {
+    display: block;
+  }
+
+  .hero-mobile img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 
   .about-inner {
@@ -978,25 +1007,35 @@ nav.nav-hidden {
   }
 
   .about-guy img {
-    width: 100%;
-    margin: -30px auto -8px;
+    width: 82%;
+    margin: -10px auto -6px;
   }
 
   .about-text {
-    padding: 32px 24px 42px;
+    align-items: center;
+    text-align: center;
+    padding: 30px 24px 42px;
     transform: none;
   }
 
   .about-headline {
-    font-size: clamp(42px, 12vw, 64px);
+    font-size: clamp(44px, 13vw, 68px);
   }
 
   .stroke-divider {
-    width: min(320px, 80vw);
+    width: min(300px, 78vw);
+  }
+
+  .stroke-divider img {
+    margin: 0 auto;
   }
 
   .about-body {
-    font-size: clamp(26px, 8vw, 40px);
+    font-size: clamp(28px, 8vw, 42px);
+  }
+
+  #how-to-enjoy {
+    padding: 50px 20px 60px;
   }
 
   .use-cases-grid {
@@ -1006,7 +1045,7 @@ nav.nav-hidden {
   .use-case {
     border-right: none;
     border-bottom: 3px solid #0e1a2b;
-    padding: 36px 24px 32px;
+    padding: 26px 18px 30px;
   }
 
   .use-case:last-child {
@@ -1014,14 +1053,22 @@ nav.nav-hidden {
   }
 
   .use-case-img {
-    width: 100%;
+    width: 88%;
     height: auto;
-    max-height: 280px;
+    max-height: 220px;
+  }
+
+  .use-case-title {
+    font-size: 38px;
+  }
+
+  .use-case-sub {
+    font-size: 24px;
   }
 
   .specs-grid {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 24px;
   }
 
   .specs-garage img {
@@ -1032,38 +1079,62 @@ nav.nav-hidden {
   .specs-table-wrap {
     border-left: none;
     border-top: 3px solid #0e1a2b;
-    padding: 32px 0 0;
+    padding: 28px 12px 34px;
   }
 
   .specs-table {
     width: 100%;
   }
 
+  .specs-table td {
+    font-size: 27px;
+  }
+
   .specs-table td:first-child {
     width: 42%;
+  }
+
+  .specs-tagline {
+    margin-bottom: 26px;
   }
 
   .bottom-cta-inner {
     grid-template-columns: 1fr;
     text-align: center;
-    margin-top: 0;
+    margin-top: 25px;
+    margin-bottom: 38px;
   }
 
   .formula img {
-    width: min(360px, 90vw);
+    width: min(360px, 88vw);
     margin: 8px auto 0;
   }
 
   .find-btn {
     justify-self: center;
+    width: fit-content;
+    padding: 16px 34px;
   }
 
   .origin-copy {
     column-count: 1;
   }
 
+  #origin-story {
+    padding: 60px 24px;
+  }
+
+  .origin-title {
+    font-size: clamp(54px, 14vw, 78px);
+  }
+
+  .origin-copy p {
+    font-size: 24px;
+  }
+
   .timeline-header-inner {
     margin-top: 40px;
+    margin-bottom: 50px;
   }
 
   .timeline-brand {
@@ -1081,17 +1152,25 @@ nav.nav-hidden {
     width: 160px;
   }
 
+  #the-story {
+    background-color: #06172a;
+    background-image:
+      url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.13'/%3E%3C/svg%3E");
+    background-size: 256px 256px;
+    padding-bottom: 40px;
+  }
+
   .timeline-inner {
-    padding: 40px 24px 0;
+    padding: 42px 24px 0;
     margin-top: 0;
   }
 
   .timeline-row {
     grid-template-columns: 1fr;
     transform: none;
-    gap: 20px;
+    gap: 18px;
     text-align: center;
-    padding: 40px 0;
+    padding: 38px 0;
   }
 
   .timeline-decade {
@@ -1107,6 +1186,14 @@ nav.nav-hidden {
     font-size: 24px;
   }
 
+  .timeline-footer {
+    background: #021b3d;
+  }
+
+  .site-footer {
+    background: #021b3d;
+  }
+
   .footer-inner {
     grid-template-columns: 1fr;
     text-align: center;
@@ -1119,10 +1206,16 @@ nav.nav-hidden {
   .footer-links {
     justify-content: center;
     flex-wrap: wrap;
+    gap: 24px;
+  }
+
+  .footer-links li {
+    list-style: none;
   }
 
   .footer-cta {
     justify-self: center;
+    width: fit-content;
   }
 
   .footer-bottom {
@@ -1144,8 +1237,8 @@ nav.nav-hidden {
       <li><a href="#product-specs">Product</a></li>
       <li><a href="#origin-story">The Story</a></li>
       <li><a href="#how-to-enjoy">How to Enjoy</a></li>
-      <li><a href="https://deepbluedistilleries.ca/where-to-buy" target="_blank" rel="noopener" class="external">Where to Buy</a></li>
-      <li><a href="https://deepbluedistilleries.ca/contact" target="_blank" rel="noopener" class="external">Contact</a></li>
+      <a href="https://deepbluedistilleries.ca/where-to-buy" target="_blank" rel="noopener" class="external">Where to Buy</a>
+            <li><a href="https://deepbluedistilleries.ca/contact" target="_blank" rel="noopener" class="external">Contact</a></li>
       <li>
         <a href="https://deepbluedistilleries.ca/shop" target="_blank" rel="noopener" class="nav-cta">
           <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
