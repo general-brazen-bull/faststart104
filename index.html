@@ -1016,37 +1016,60 @@ nav.nav-hidden {
     display: block;
   }
 
-  .about-inner {
-    grid-template-columns: 1fr;
+  #about {
+    overflow: hidden;
+    background: #021b3d;
+  }
+
+   .about-inner {
+    display: flex;
+    flex-direction: column;
+    height: auto;
     min-height: auto;
   }
 
+  .about-guy {
+    width: 100%;
+    order: 1;
+  }
+
+
   .about-guy img {
     width: 82%;
-    margin: -10px auto -6px;
+    max-width: 420px;
+    margin: -18px auto 0;
+    display: block;
   }
 
   .about-text {
+    order: 2;
+    width: 100%;
     align-items: center;
     text-align: center;
-    padding: 30px 24px 42px;
+    padding: 28px 24px 42px;
     transform: none;
+    background: #021b3d;
   }
 
   .about-headline {
-    font-size: clamp(44px, 13vw, 68px);
+    font-size: clamp(48px, 14vw, 72px);
+    line-height: 0.88;
   }
+
 
   .stroke-divider {
     width: min(300px, 78vw);
+    margin: 10px auto 18px;
   }
 
   .stroke-divider img {
+    width: 100%;
     margin: 0 auto;
   }
 
   .about-body {
-    font-size: clamp(28px, 8vw, 42px);
+    font-size: clamp(30px, 8vw, 44px);
+    line-height: 1.05;
   }
 
   #how-to-enjoy {
@@ -1268,13 +1291,12 @@ nav.nav-hidden {
 
   <!-- MOBILE NAV -->
   <div class="nav-mobile" id="mobileNav">
-    <a href="#about" onclick="closeMobile()">About</a>
     <a href="#product-specs" onclick="closeMobile()">Product</a>
     <a href="#origin-story" onclick="closeMobile()">The Story</a>
     <a href="#how-to-enjoy" onclick="closeMobile()">How to Enjoy</a>
-    <a href="https://deepbluedistilleries.ca" target="_blank" rel="noopener">Where to Buy</a>
-    <a href="https://deepbluedistilleries.ca" target="_blank" rel="noopener">Contact</a>
-    <a href="https://deepbluedistilleries.ca" target="_blank" rel="noopener" class="nav-cta">
+    <a href="https://deepbluedistilleries.ca/where-to-buy" target="_blank" rel="noopener">Where to Buy</a>
+    <a href="https://deepbluedistilleries.ca/contact" target="_blank" rel="noopener">Contact</a>
+    <a href="https://deepbluedistilleries.ca/shop" target="_blank" rel="noopener" class="nav-cta">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" width="14" height="14"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
       Shop Now
     </a>
