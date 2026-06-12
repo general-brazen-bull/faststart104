@@ -30,6 +30,19 @@
       overflow-x: hidden;
     }
 
+    html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+video,
+svg {
+  max-width: 100%;
+}
+
     /* ── NAV ── */
     nav {
       position: fixed;
@@ -1156,7 +1169,7 @@ nav.nav-hidden {
     gap: 34px;
     text-align: center;
   }
-  
+
   .formula img {
     width: min(360px, 88vw);
     margin: 8px auto 0;
@@ -1522,7 +1535,7 @@ nav.nav-hidden {
     max-width: 100%;
     max-height: 450px;
     margin: 36px auto;
-    transform: rotate(-90deg);
+    transform: rotate(-90deg)!important;
     object-position: center left;
   }
 }
