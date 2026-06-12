@@ -1146,12 +1146,17 @@ nav.nav-hidden {
   }
 
   .bottom-cta-inner {
-    grid-template-columns: 1fr;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 34px;
     text-align: center;
-    margin-top: 25px;
-    margin-bottom: 38px;
   }
-
+  
   .formula img {
     width: min(360px, 88vw);
     margin: 8px auto 0;
@@ -1292,17 +1297,7 @@ nav.nav-hidden {
     padding: 46px 20px 52px;
   }
 
-  .bottom-cta-inner {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 34px;
-    text-align: center;
-  }
+
 
   .formula,
   .deepblue-wordmark,
